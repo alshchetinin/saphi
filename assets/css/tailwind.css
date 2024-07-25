@@ -79,7 +79,7 @@
 
 @layer base {
   h1 {
-    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+    @apply scroll-m-20  font-semibold tracking-tight text-xl;
   }
 
   h2 {
@@ -125,4 +125,8 @@
   tbody {
     @apply [&_tr]:m-0 [&_tr]:border-t [&_tr]:p-0 [&_tr]:even:bg-muted;
   }
+}
+
+.router-link-exact-active {
+  opacity: 1 !important;
 }

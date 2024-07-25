@@ -11,6 +11,15 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
   },
+  content: {
+    highlight: {
+      theme: {
+        default: "github-light",
+        // Theme used if `html.dark`
+        dark: "github-dark",
+      },
+    },
+  },
 
   compatibilityDate: "2024-07-22",
 });
