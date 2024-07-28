@@ -7,8 +7,10 @@ defineProps({
 </script>
 
 <template>
-  <article class="px-32">
-    <div class="flex justify-between items-center gap-4 mb-3">
+  <article class="lg:px-32">
+    <div
+      class="flex lg:flex-row flex-col justify-between lg:items-center gap-4 mb-3"
+    >
       <h2 class="px-2">
         {{ project.title }}
       </h2>

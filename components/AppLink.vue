@@ -7,7 +7,7 @@ defineProps({
 <template>
   <NuxtLink
     :to="link"
-    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground leading-none whitespace-nowrap shadow-none hover:opacity-90 transition-all"
+    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground leading-none whitespace-nowrap shadow-none hover:opacity-90 transition-all w-max"
   >
     <slot />
     <svg
