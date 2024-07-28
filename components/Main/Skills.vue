@@ -1,5 +1,9 @@
+<script setup>
+import { WandIcon } from "lucide-vue-next";
+</script>
+
 <template>
-  <IconSection title="Навыки">
+  <IconSection title="Навыки" :icon="WandIcon">
     <section>
       <h2>Исследования и анализ</h2>
       <ul>

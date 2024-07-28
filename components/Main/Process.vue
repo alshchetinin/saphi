@@ -1,5 +1,9 @@
+<script setup>
+import { Layers } from "lucide-vue-next";
+</script>
+
 <template>
-  <IconSection title="Процесс работы">
+  <IconSection title="Процесс работы" :icon="Layers">
     <section>
       <h2>Погружение в задачу</h2>
       <p>

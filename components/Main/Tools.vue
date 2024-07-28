@@ -1,4 +1,6 @@
 <script setup>
+import { PanelsLeftBottom } from "lucide-vue-next";
+
 const tools = [
   {
     id: 1,
@@ -29,7 +31,7 @@ const tools = [
 </script>
 
 <template>
-  <IconSection title="Инстументы">
+  <IconSection title="Инстументы" :icon="PanelsLeftBottom">
     <div class="flex gap-2">
       <NuxtImg
         v-for="tool in tools"

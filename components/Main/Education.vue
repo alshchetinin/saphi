@@ -1,5 +1,9 @@
+<script setup>
+import { GraduationCapIcon } from "lucide-vue-next";
+</script>
+
 <template>
-  <IconSection title="Образование">
+  <IconSection title="Образование" :icon="GraduationCapIcon">
     <section>
       <h2>Маркетинг</h2>
       <p>

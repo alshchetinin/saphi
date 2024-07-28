@@ -8,8 +8,8 @@ defineProps({
 
 <template>
   <article class="px-32">
-    <div class="flex justify-between items-center gap-4">
-      <h2 class="px-2 mb-2">
+    <div class="flex justify-between items-center gap-4 mb-3">
+      <h2 class="px-2">
         {{ project.title }}
       </h2>
       <AppLink :to="project._path">Читать кейс</AppLink>

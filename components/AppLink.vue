@@ -1,7 +1,13 @@
+<script setup>
+defineProps({
+  link: { type: String, required: true },
+});
+</script>
+
 <template>
   <NuxtLink
     :to="link"
-    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground leading-none whitespace-nowrap"
+    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-primary-foreground leading-none whitespace-nowrap shadow-none hover:opacity-90 transition-all"
   >
     <slot />
     <svg

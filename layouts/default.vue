@@ -12,3 +12,11 @@
     </div>
   </div>
 </template>
+
+<script setup>
+useHead({
+  bodyAttrs: {
+    class: "dark",
+  },
+});
+</script>

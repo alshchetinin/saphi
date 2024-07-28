@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 defineProps({
   article: {
     type: Object,
@@ -8,10 +8,8 @@ defineProps({
 
 <template>
   <article class="px-32">
-    <div class="flex justify-between items-center gap-4">
-      <h2 class="px-2 mb-2">
-        {{ article.title }}
-      </h2>
+    <div class="flex justify-between items-center gap-4 mb-4">
+      <h2 class="px-2 mb-2">{{ article.title }} ghb</h2>
       <AppLink :to="article._path">Читать кейс</AppLink>
     </div>
     <NuxtImg

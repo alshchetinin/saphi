@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div
+    <NuxtLink
+      to="/"
       class="max-lg:flex items-center max-lg:gap-4 max-lg:p-4 whitespace-nowrap"
     >
-      <NuxtImg src="avatar.jpg" />
+      <NuxtImg src="avatar.jpg" class="rounded-lg mb-1" />
       <div>
-        <h2 c class="lg:mt-3 mb-0">Шайдуллина Сафия</h2>
-        <p class="!mt-0">Product desigher</p>
+        <h2 c class="lg:mt-3 mb-0 text-lg">Шайдуллина Сафия</h2>
+        <p class="!mt-0 opacity-70 text-sm">Product desigher</p>
       </div>
-    </div>
+    </NuxtLink>
     <div class="lg:mt-20">
       <AppNav />
     </div>

@@ -7,7 +7,9 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@nuxt/image",
+    "@nuxt/icon",
   ],
+
   colorMode: {
     classSuffix: "",
   },

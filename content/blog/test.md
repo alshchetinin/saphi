@@ -1,7 +1,7 @@
 ---
-title: "Отправка формы в Telegram через Nuxt 3 API"
+title: "Как с помощью дизайн-токенов наша команда оптимизировала и ускорила процессы работы"
 date: 2022-11-18
-company: "Nuxt.js"
+company: "АН «Этажи»"
 links:
   - title: "prodaction"
     link: "https://your_domain.com"
@@ -9,133 +9,20 @@ links:
     link: "https://figma.com"
 ---
 
-# Отправка формы в Telegram через Nuxt 3 API
+# Как с помощью дизайн-токенов наша команда оптимизировала и ускорила процессы работы
 
-#Resources/Programming/Nuxt
+Внедрение дизайн-токенов в рабочий процесс позволило нашей команде оптимизировать, ускорить многие этапы разработки интерфейсов.
 
-## Описание
+## Проблемы, решенные с помощью дизайн-токенов:
 
-Этот API endpoint позволяет отправлять данные формы в Telegram через бота. Он использует Nitro server, встроенный в Nuxt 3.
+## Кейс 1: Адаптивный дизайн
 
-## Конфигурация
+### Проблема
 
-1. Создайте файл `server/api/send-telegram.post.js` (или `.ts` для TypeScript) в вашем Nuxt 3 проекте.
+До внедрения дизайн-токенов дизайнеры нашей команды создавали отдельные макеты веб-страниц для смартфонов, планшетов и компьютеров, то есть три размера брек-поинтов. В каждой категории большая вариативность ширины и высоты, поэтому такой дизайн на продакшене часто выглядел несовершенно.
 
-2. Вставьте следующий код:
+Для решения этой проблемы мы создали пресеты с дополнительными брекпоинтами. Дизайнеры использовали эти пресеты как шаблоны, вручную изменяя параметры макета под нужные брекпоинты. Однако это не обеспечивало легкость в поддержке и обновлении адаптивного дизайна и не исключало ошибок при использовании правильных размеров компонентов и текста среди дизайнеров. Остальные участники команды (аналитики, тестировщики) не смогли проверить правильности решений, так как не было четких правил использования элементов интерфейса на различных устройствах
 
-```javascript
-export default defineEventHandler(async (event) => {
-  const body = await readBody(event);
-  const config = useRuntimeConfig();
-  async function sendTelegram(data) {
-    const token = config.TELEGRAM_BOT_TOKEN;
-    const idChat = config.TELEGRAM_CHAT_ID;
+### Решение с использованием дизайн-токенов
 
-    // Объект для перевода ключей
-    const translations = {
-      name: "Имя",
-      phone: "Телефон",
-      email: "Электронная почта",
-      type: "Тип заявки",
-      accept: "Согласие на обработку персональных данных",
-    };
-
-    const translateKey = (key) => translations[key] || key;
-
-    let text = Object.entries(data)
-      .map(([key, value]) => `${translateKey(key)}: ${value}`)
-      .join("\n");
-
-    text = encodeURIComponent(text);
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${idChat}&text=${text}`;
-
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error("Failed to send message to Telegram");
-      }
-      return true;
-    } catch (error) {
-      console.error("Error sending to Telegram:", error);
-      throw error;
-    }
-  }
-
-  try {
-    await sendTelegram(body);
-    return { success: true, message: "Message sent to Telegram" };
-  } catch (error) {
-    return { success: false, message: error.message };
-  }
-});
-```
-
-3. Добавьте переменные окружения в файл `.env`:
-
-```
-TELEGRAM_BOT_TOKEN=your_bot_token
-TELEGRAM_CHAT_ID=your_chat_id
-```
-
-4. Добавьте переменные в `nuxt.config.ts`
-
-```
-  runtimeConfig: {
-    public: {},
-    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
-    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
-  },
-```
-
-## Использование
-
-Для отправки данных на этот endpoint, выполните POST-запрос на `/api/send-telegram` с данными формы в теле запроса.
-
-### Параметры запроса
-
-- Метод: POST
-- URL: `/api/send-telegram`
-- Тело: JSON объект с данными формы
-
-### Пример запроса
-
-```javascript
-const response = await fetch("/api/send-telegram", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: JSON.stringify({
-    name: "John Doe",
-    email: "john@example.com",
-    message: "Hello, World!",
-  }),
-});
-
-const result = await response.json();
-```
-
-### Ответ
-
-Успешный ответ:
-
-```json
-{
-  "success": true,
-  "message": "Message sent to Telegram"
-}
-```
-
-Ответ с ошибкой:
-
-```json
-{
-  "success": false,
-  "message": "Error message"
-}
-```
-
-## Примечания
-
-- Этот endpoint автоматически форматирует данные формы в JSON перед отправкой в Telegram.
-- Убедитесь, что ваш бот имеет доступ к указанному чату.
+С появлением дизайн-токенов процесс мы смогли решить проблемы разработки макетов. Мы создали два набора переменных для десктопа и мобильных устройств (resp: desk и mob), а внутри - переменные для высоты и ширины (width и height). В каждой переменной прописаны значения для различных брекпоинтов (desk: 1920x880, 1440x880, 1280x520, 1024x568 и mob: 768x1024, 600x900, 430x932, 360x568). Работая с макетом, дизайнер просто меняет значение на панели инструментов, и макет автоматически адаптируется под нужный размер экрана, обеспечивая гибкость и консистентность.

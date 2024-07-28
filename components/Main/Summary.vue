@@ -1,5 +1,9 @@
+<script setup>
+import { MessageSquareIcon } from "lucide-vue-next";
+</script>
+
 <template>
-  <IconSection title="Саммари">
+  <IconSection title="Саммари" :icon="MessageSquareIcon">
     <section>
       <p>
         Более 3 лет проектирую пользовательские интерфейсы для мобильных

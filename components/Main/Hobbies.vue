@@ -1,5 +1,9 @@
+<script setup>
+import { HeartIcon } from "lucide-vue-next";
+</script>
+
 <template>
-  <IconSection title="Хобби и увлечения">
+  <IconSection title="Хобби и увлечения" :icon="HeartIcon">
     <section>
       <h2>Спорт</h2>
       <p>Способ медитации после рабочего дня, помогает восстановить ресурс</p>

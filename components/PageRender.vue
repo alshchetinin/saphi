@@ -6,7 +6,7 @@ defineProps({
 });
 </script>
 <template>
-  <div class="max-w-3xl mx-auto">
+  <div class="max-w-2xl mx-auto">
     <div class="flex justify-between items-center mb-4">
       <div class="flex gap-3 items-center">
         <date>{{ new Date(data.date).toLocaleDateString("ru-Ru") }}</date>

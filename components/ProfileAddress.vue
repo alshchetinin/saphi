@@ -3,12 +3,14 @@ const social = [
   {
     id: 1,
     name: "Telegram",
-    link: "#",
+    icon: "bxl:telegram",
+    link: "https://t.me/Sh_Saphia",
   },
   {
     id: 2,
     name: "Whatsapp",
-    link: "#",
+    icon: "bxl:whatsapp",
+    link: "https://wa.me/+79829400018",
   },
 ];
 
@@ -22,8 +24,15 @@ const email = "sh_s_22@mail.ru";
       <a
         v-for="link in social"
         :key="link.id"
-        class="h-7 w-7 rounded-full bg-primary inline-block"
+        :href="link.link"
+        target="_blank"
+        class="inline-block"
       >
+        <div
+          class="bg-foreground text-background h-7 w-7 rounded-full flex items-center justify-center"
+        >
+          <Icon :name="link.icon" class="w-[16px]" />
+        </div>
       </a>
     </div>
     <div class="mt-2 whitespace-nowrap flex flex-col">
