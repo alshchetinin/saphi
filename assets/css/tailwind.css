@@ -83,11 +83,11 @@
   }
 
   h2 {
-    @apply mt-4 scroll-m-20 text-lg font-medium tracking-tight transition-colors first:mt-0;
+    @apply mt-4 scroll-m-20 text-lg font-semibold tracking-tight transition-colors first:mt-0;
   }
 
   h3 {
-    @apply scroll-m-20 text-base font-medium tracking-tight;
+    @apply scroll-m-20 text-base font-semibold tracking-tight;
   }
 
   p {

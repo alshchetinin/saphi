@@ -2,6 +2,9 @@
 const { data: articles } = await useAsyncData("articles", () =>
   queryContent("/blog").find()
 );
+useHead({
+  title: "Статьи — Шайдуллина Сафия",
+});
 </script>
 
 <template>

@@ -4,6 +4,10 @@ const slug = route.params.slug;
 const { data } = await useAsyncData(slug, () =>
   queryContent(`/blog/${slug}`).findOne()
 );
+
+useHead({
+  title: `${data.value.title} — Шидуллина Сафия`,
+});
 </script>
 
 <template>

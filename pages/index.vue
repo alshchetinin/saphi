@@ -7,3 +7,9 @@
   <MainHobbies />
   <MainEducation />
 </template>
+
+<script setup>
+useHead({
+  title: "Шайдуллина Сафия — Product desigher",
+});
+</script>
