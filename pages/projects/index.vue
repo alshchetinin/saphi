@@ -8,9 +8,11 @@ useHead({
 </script>
 
 <template>
-  <ProjectCard
-    v-for="project in projects"
-    :key="project._path"
-    :project="project"
-  />
+  <div class="grid gap-10">
+    <ProjectCard
+      v-for="project in projects"
+      :key="project._path"
+      :project="project"
+    />
+  </div>
 </template>
