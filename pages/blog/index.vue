@@ -8,9 +8,11 @@ useHead({
 </script>
 
 <template>
-  <BlogCard
-    v-for="article in articles"
-    :key="article._path"
-    :article="article"
-  />
+  <div class="grid gap-10">
+    <BlogCard
+      v-for="article in articles"
+      :key="article._path"
+      :article="article"
+    />
+  </div>
 </template>
