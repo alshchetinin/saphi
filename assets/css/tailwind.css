@@ -134,6 +134,7 @@
   opacity: 1 !important;
 }
 
-.content-render img {
+.content-render img,
+.content-render video {
   @apply rounded-xl;
 }
