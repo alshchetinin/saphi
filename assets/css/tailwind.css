@@ -105,6 +105,9 @@
   ul {
     @apply my-2 ml-6 list-disc [&>li]:mt-2;
   }
+  ol {
+    @apply my-2 ml-6 list-decimal [&>li]:mt-2;
+  }
 
   table {
     @apply my-6 w-full overflow-y-auto;
