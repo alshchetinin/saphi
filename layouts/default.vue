@@ -16,7 +16,7 @@
 <script setup>
 useHead({
   bodyAttrs: {
-    class: "dark",
+    class: "",
   },
 });
 </script>
