@@ -19,6 +19,6 @@ defineProps({
       </div>
     </div>
 
-    <ContentRendererMarkdown :value="data" />
+    <ContentRendererMarkdown :value="data" class="content-render" />
   </div>
 </template>

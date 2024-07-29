@@ -133,3 +133,7 @@
 .router-link-exact-active {
   opacity: 1 !important;
 }
+
+.content-render img {
+  @apply rounded-xl;
+}
