@@ -13,7 +13,12 @@ defineProps({
         <div>{{ data.company }}</div>
       </div>
       <div class="flex gap-3">
-        <AppLink v-for="link in data.links" :key="link" :link="link">
+        <AppLink
+          v-for="link in data.links"
+          :key="link"
+          :link="link.link"
+          target="_blank"
+        >
           {{ link.title }}
         </AppLink>
       </div>
