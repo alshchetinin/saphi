@@ -1,6 +1,6 @@
 ---
 title: "Разработка нового функционала Stories повысило вовлеченность и увеличило конверсию"
-picture: "/project.png"
+picture: "/stories/cover.jpg"
 date: 2024-02-13
 company: "АН «Этажи»"
 links:
