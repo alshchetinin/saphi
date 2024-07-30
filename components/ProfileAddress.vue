@@ -15,7 +15,7 @@ const social = [
 ];
 
 const phone = "8 (982) 940-00-18";
-const email = "sh_s_22@mail.ru";
+const email = "sh.saphia@gmail.com";
 </script>
 
 <template>
