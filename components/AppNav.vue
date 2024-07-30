@@ -8,7 +8,7 @@ const links = [
   },
   {
     id: 2,
-    name: "Проекты",
+    name: "Кейсы",
     link: "/projects",
   },
   {
