@@ -3,7 +3,7 @@ const { data: projects } = await useAsyncData("projects", () =>
   queryContent("/projects").sort({ date: -1 }).find()
 );
 useHead({
-  title: "Проекты — Шайдуллина Сафия",
+  title: "Кейсы — Шайдуллина Сафия",
 });
 </script>
 

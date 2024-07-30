@@ -6,8 +6,11 @@
         <div>август 2022 – настоящее время</div>
       </div>
       <div class="flex gap-2">
-        <AppLink to="/">Кейсы</AppLink>
-        <AppLink to="/">Figma</AppLink>
+        <AppLink to="/projects">Кейсы</AppLink>
+        <AppLink
+          to="https://www.figma.com/design/hbIk5zwFkjDPdjLsg5nG8n/%D0%A8%D0%B0%D0%B9%D0%B4%D1%83%D0%BB%D0%BB%D0%B8%D0%BD%D0%B0-%D0%A1%D0%B0%D1%84%D0%B8%D1%8F-%7C-Product-desigher?node-id=0-1"
+          >Figma</AppLink
+        >
       </div>
     </div>
     <div class="pl-6 max-w-md py-3">
