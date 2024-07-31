@@ -10,6 +10,6 @@
 
 <script setup>
 useHead({
-  title: "Шайдуллина Сафия — Product desigher",
+  title: "Шайдуллина Сафия — Product designer",
 });
 </script>
