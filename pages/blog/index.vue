@@ -1,6 +1,6 @@
 <script setup>
 const { data: articles } = await useAsyncData("articles", () =>
-  queryContent("/blog").find()
+  queryContent("/blog").sort({ date: -1 }).find()
 );
 useHead({
   title: "Статьи — Шайдуллина Сафия",
