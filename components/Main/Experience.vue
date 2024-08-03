@@ -16,7 +16,7 @@ const accordionItems = [
     value: "item-2",
     icon: "/Freelance.svg",
     title: "Web designer, Фриланс",
-    subtitle: "май 2021 – ноябрь 2021",
+    subtitle: "май 2020 – ноябрь 2021",
     component: Freelance,
   },
 ];
