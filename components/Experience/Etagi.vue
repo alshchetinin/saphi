@@ -29,9 +29,12 @@
         <h2>Ecosystem Cosmos</h2>
         <div>ноябрь 2021 – август 2022</div>
       </div>
-      <!-- <div class="flex gap-2">
-        <AppLink to="/">Figma</AppLink>
-      </div> -->
+      <div class="flex gap-2">
+        <AppLink
+          to="https://www.figma.com/design/PzgizGwa9UMtlKWMlz2c7h/Ecosystem-Cosmos?node-id=2-37928&t=SaYEe3pzEkexm2le-1"
+          >Figma</AppLink
+        >
+      </div>
     </div>
     <div class="pl-6 max-w-md py-3">
       Внутренний сервис для удобной и эффективной работы всех подразделений
