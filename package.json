@@ -8,6 +8,7 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@artmizu/yandex-metrika-nuxt": "^1.0.4",
     "@nuxt/content": "^2.13.1",
     "@nuxt/image": "^1.7.0",
     "class-variance-authority": "^0.7.0",

@@ -8,8 +8,18 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/image",
     "@nuxt/icon",
+    "@artmizu/yandex-metrika-nuxt",
   ],
-
+  yandexMetrika: {
+    id: "98074547",
+    initParams: {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      ecommerce: "dataLayer",
+    },
+  },
   colorMode: {
     classSuffix: "",
   },
